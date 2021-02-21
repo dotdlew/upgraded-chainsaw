@@ -1,9 +1,16 @@
 // Assignment code here
 function generatePassword() {
-  // terrible generator
-  let r = Math.random().toString(36).substring(5);
-  return r;
+  var lengthMin = 8,
+      lengthMax = 128,
+      length = (lengthMin % lengthMax),
+      charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+      retVal = "";
+  for (var i = 0, n = charset.length; i < length; ++i) {
+      retVal += charset.charAt(Math.floor(Math.random() * n));
   }
+  return retVal;
+}
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 

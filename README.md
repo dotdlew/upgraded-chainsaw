@@ -1,5 +1,5 @@
 # upgraded-chainsaw
-Module 3 Challenge: JavaScript Password Generator
+Module 03 Challenge: JavaScript Password Generator
 
 # Description
 An application that can generate a random password based on selected criteria
